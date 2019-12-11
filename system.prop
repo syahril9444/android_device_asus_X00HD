@@ -1,0 +1,6 @@
+ro.build.model=ASUS_X00HD
+ro.build.device=X00HD
+# for stock ROM
+ro.product.device=ASUS_X00HD_4
+ro.product.model=ASUS_X00HD
+ro.product.name=OPEN_Phone
