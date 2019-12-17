@@ -3,7 +3,6 @@ import init.recovery.qcom_decrypt.rc
 on init
     insmod /sbin/texfat.ko
 
-    start copy_fingerprint
     start qcom-usb-sh
 
 on fs
@@ -12,8 +11,3 @@ on fs
     mount ext4 /dev/block/bootdevice/by-name/factory /factory ro nodev nosuid
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-
-service copy_fingerprint /sbin/copy_fingerprint.sh
-    oneshot
-    disabled
-    seclabel u:r:recovery:s0
