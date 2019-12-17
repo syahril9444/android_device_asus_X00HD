@@ -37,7 +37,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := msm8937-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/X00HD
-#TARGET_PREBUILT_KERNEL := device/asus/X00HD/kernel
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
