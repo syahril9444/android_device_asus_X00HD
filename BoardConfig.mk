@@ -49,24 +49,17 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
-TARGET_UNIFIED_DEVICE := true
-TARGET_SYSTEM_PROP := device/asus/X00HD/system.prop
 TW_USE_TOOLBOX := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 FOX_BUGGED_AOSP_ARB_WORKAROUND := 1483228800
-#TW_NO_SCREEN_BLANK := true
-
+TARGET_OTA_ASSERT_DEVICE := X00HD,ASUS_X00HD_4
+TARGET_UNIFIED_DEVICE := true
 # exFAT FS Support
 TW_INCLUDE_FUSE_EXFAT := true
-
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
 TW_INCLUDE_NTFS_3G := true
-
-TARGET_RECOVERY_DEVICE_MODULES := \
-    tzdata \
-    libbinder \
-    libgui \
-    libui \
-    qseecomd
+# Crypto
+TARGET_HW_DISK_ENCRYPTION := true
+RECOVERY_SDCARD_ON_DATA := true
 
