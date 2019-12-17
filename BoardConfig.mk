@@ -38,11 +38,6 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := msm8937-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/X00HD
 
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
-
-RECOVERY_SDCARD_ON_DATA := true
-
 # TWRP-Specific
 TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
