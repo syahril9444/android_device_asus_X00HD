@@ -29,6 +29,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit language packages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+# Inherit 64bit support
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+
 PRODUCT_NAME := omni_X00HD
 PRODUCT_DEVICE := X00HD
 PRODUCT_BRAND := ASUS
