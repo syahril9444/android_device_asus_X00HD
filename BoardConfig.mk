@@ -42,6 +42,11 @@ TARGET_KERNEL_SOURCE := kernel/asus/X00HD
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Crypto
+TARGET_HW_DISK_ENCRYPTION := true
+
+RECOVERY_SDCARD_ON_DATA := true
+
 # TWRP-Specific
 TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
