@@ -38,6 +38,10 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG := X00HD_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/X00HD
 
+# Workaround for error copying vendor files to recovery ramdisk
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
+
 # TWRP-Specific
 TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
