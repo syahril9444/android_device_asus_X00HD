@@ -321,6 +321,13 @@ PRODUCT_PACKAGES += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
+	
+# QCAV
+PRODUCT_PACKAGES += \
+    qcmediaplayer \
+    libqcmediaplayer \
+    libdashplayer \
+    libextmedia_jni
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -358,7 +365,18 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     fstab.qcom \
     ueventd.qcom.rc \
+	
+# RCS
+PRODUCT_PACKAGES += \
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_api \
+    rcs_service_api.xml
 
+# RenderScript HAL
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
+	
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.2 \
@@ -388,6 +406,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+	
+# TextClassifier
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
 	
 # Thermal
 PRODUCT_PACKAGES += \
