@@ -306,8 +306,26 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+# Wifi
+PRODUCT_PACKAGES += \
+    libcld80211 \
+    libqsap_sdk \
+    libQWiFiSoftApCfg \
+    libwpa_client \
+    hostapd \
+    macloader \
+    dhcpcd.conf \
+    wificond \
+    libwifi-hal-qcom \
+    wcnss_service  \
+    wpa_supplicant \
+    wpa_supplicant.conf
 
-# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.2-service \
+	vendor.qti.hardware.wifi.hostapd@1.0.vendor \
+    vendor.qti.hardware.wifi.supplicant@2.1.vendor
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
