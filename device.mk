@@ -101,6 +101,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
