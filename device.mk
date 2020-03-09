@@ -138,7 +138,7 @@ PRODUCT_PACKAGES += \
 	
 # Doze
 PRODUCT_PACKAGES += \
-    AsusDoze
+    ZenfoneDoze
 
 # DRM
 PRODUCT_PACKAGES += \
