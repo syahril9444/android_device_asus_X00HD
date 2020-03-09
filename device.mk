@@ -111,6 +111,10 @@ PRODUCT_PACKAGES += \
     camera.device@3.3-impl \
     camera.device@3.4-impl
 	
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.1-service
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
