@@ -146,6 +146,12 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.1-service.widevine \
     android.hardware.drm@1.1-service.clearkey
 	
+# Ebtables
+PRODUCT_PACKAGES += \
+    ebtables \
+    ethertypes \
+    libebt
+	
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
