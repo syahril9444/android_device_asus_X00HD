@@ -262,6 +262,25 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
+# OMX
+PRODUCT_PACKAGES += \
+    libmm-omxcore \
+    libc2dcolorconvert \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxQcelp13Enc \
+    libOmxSwVdec \
+    libOmxSwVencMpeg4 \
+    libOmxSwVencHevc \
+    libOmxVdec \
+    libOmxVenc \
+    libOmxVidcCommon \
+    libqomx_core \
+    libstagefrighthw \
+    libstagefright_soft_flacdec
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
